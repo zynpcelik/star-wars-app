@@ -32,7 +32,7 @@ function SpaceShips() {
     <div className="flex justify-center flex-col mt-5 ">
       <Filter />
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-6 bg-slate-700 opacity-90 rounded-xl text-xs p-5 w-4/5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 bg-slate-700 opacity-90 rounded-xl text-xs p-5 w-4/5 max-w-7xl">
           {!isLoading &&
             filteredShips.map((ship, i) => {
               return (
