@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## App Screenshots
+
+![app-screenshot](https://github.com/zynpcelik/star-wars-app/blob/master/assets/screenshots/starwarsAppScreenshot.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
