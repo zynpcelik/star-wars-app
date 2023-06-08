@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setFiltered, getFiltered } from "../redux/starWars/starWarsSlice";
 import "../App.css";
 
 function Filter() {
+  const ships = useSelector((state) => state.spaceShips.ships);
   const dispatch = useDispatch("");
   const [passenger, setPassenger] = useState("");
   const [crew, setCrew] = useState("");
@@ -12,7 +13,7 @@ function Filter() {
 
   useEffect(() => {
     handleFilter();
-  }, [passenger, crew, length, cargo]);
+  }, [passenger, crew, length, cargo, ships]);
 
   const Sorting = (e) => {
     let sortBy = e.target.value;

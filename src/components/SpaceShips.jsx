@@ -6,6 +6,7 @@ import {
   getNextPage,
   getDetailsPage,
   setFiltered,
+  getFiltered,
 } from "../redux/starWars/starWarsSlice";
 
 function SpaceShips() {

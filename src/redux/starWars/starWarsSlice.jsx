@@ -68,18 +68,21 @@ export const starWarsStore = createSlice({
         });
       }
       if (action.payload.crew) {
+        let value = parseInt(action.payload.crew);
         filteredShips = filteredShips.filter((ship) => {
-          return ship.crew >= action.payload.crew;
+          return parseInt(ship.crew) >= value;
         });
       }
       if (action.payload.cargo) {
+        let value = parseInt(action.payload.cargo);
         filteredShips = filteredShips.filter((ship) => {
-          return ship.cargo >= action.payload.cargo;
+          return parseInt(ship.cargo_capacity) >= value;
         });
       }
       if (action.payload.length) {
+        let value = parseInt(action.payload.length);
         filteredShips = filteredShips.filter((ship) => {
-          return ship.length >= action.payload.length;
+          return parseInt(ship.length) >= value;
         });
       }
       state.filteredShips = filteredShips;
