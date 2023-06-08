@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## App Screenshots
 
-![app-screenshot](https://github.com/zynpcelik/star-wars-app/blob/master/assets/screenshots/starwarsAppScreenshot.png)
+![app-screenshot](https://github.com/zynpcelik/star-wars-app/blob/master/src/assets/screenshots/starwarsAppScreenshot.png)
 
 ## Available Scripts
 
